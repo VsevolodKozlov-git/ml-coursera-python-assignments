@@ -21,7 +21,7 @@ class SubmissionBase:
         self.functions = OrderedDict()
         self.args = dict()
 
-    def grade(self):
+    def grade(self) -> object:
         print('\nSubmitting Solutions | Programming Exercise %s\n' % self.assignment_slug)
         self.login_prompt()
 
